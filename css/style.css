@@ -1,0 +1,136 @@
+html{box-sizing: border-box;}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #293146;
+}
+.wrapper{
+  background-color: #fff;
+  padding: 35px 40px 30px 30px;
+  width: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle{
+  position: relative;
+  padding-right: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid #dedede;
+}
+.icons{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.icons i{
+  transition: .4s ease all;
+  margin-top: 35px;
+  border-right: 2px solid transparent;
+}
+.icons i:hover{
+  border-right: 2px solid #648cf7;
+  color: #648cf7;
+  cursor: pointer;
+}
+.icons i:first-child{
+  margin-top: 0;
+}
+.icon_one{
+  align-self: flex-start;
+}
+.bottom img{
+  width: 44px;
+  border-radius: 50%;
+}
+.bottom{
+  align-items: flex-end;
+}
+
+
+.cities_pictures-title{
+  margin: 0;
+  color: #dedede;
+  font-weight: 200;
+}
+.city_names{
+  margin:30px 0 ;
+  display: flex;
+  justify-content: space-between;
+}
+.city_names p{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.city_names button{
+  padding: 13px 40px;
+  color: #648cf7;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  background-color: #fff;
+  transition: 0.3s ease ;
+}
+.city_names button:hover{
+  cursor: pointer;
+  border: 1px solid #648cf7;
+}
+.images p{
+  position: relative;
+}
+.images p +  p{
+  margin-left: 20px;
+}
+.images p i{
+  color: #fff;
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  visibility: hidden;
+}
+.imgi + .imgi{
+  margin-left: 20px;
+}
+.images p:hover i{
+  visibility: visible;
+}
+.images p:nth-child(3){
+  margin-left: 0;
+}
+.images img:first-child,.images img:nth-child(2){
+  margin-bottom: 20px;
+}
+
+.images_img1,.images_img3,.images_img4,.images_img5{
+  width: 196px;
+  height: 200px;
+}
+.images p{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.images_img2{
+  width: 414px;
+  height: 200px;
+}
+.images img:hover{
+ filter: blur(1px);
+}
